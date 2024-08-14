@@ -58,9 +58,9 @@ header, section {
   position: absolute;
   width: 100%;
   padding: 64px 0 64px 64px;
-  display: grid;
-  grid-template-columns: 50px 1fr 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav__box_link {
   background: rgba(255, 255, 255, 0.0196078431);
@@ -76,10 +76,9 @@ header, section {
 }
 .nav hr {
   width: 80%;
-  position: relative;
-  left: 20%;
+  transform: translateX(50px);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .nav hr {
     display: none;
   }
@@ -101,6 +100,12 @@ header, section {
   background: rgba(0, 0, 0, 0);
   position: relative;
   right: 25px;
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .nav__btn_hamb {
+    display: block;
+  }
 }
 .nav__btn_hamb .line_2 {
   width: 100%;
@@ -124,11 +129,6 @@ header, section {
   background: #FFFFFF;
   bottom: 0px;
 }
-@media screen and (max-width: 1024px) {
-  .nav {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media screen and (max-width: 768px) {
   .nav {
     padding: 0px 0 40px 40px;
@@ -137,8 +137,6 @@ header, section {
 @media screen and (max-width: 650px) {
   .nav {
     padding: 25px;
-    display: flex;
-    justify-content: space-between;
   }
 }
 

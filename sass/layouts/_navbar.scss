@@ -5,15 +5,14 @@
     position: absolute;
     width: 100%;
 padding: theme.$p-64 0 theme.$p-64 theme.$p-64;
-display: grid;
-grid-template-columns: 50px 1fr 1fr;
+display: flex;
 align-items: center;
+justify-content: space-between;
 
     &__box_link {
     background: #ffffff05;
     padding: 38.5px 64px;
     display: flex;
-    // width: 50%;
     justify-content: space-between;
     position: relative;
     @media screen and (max-width: 650px) {
@@ -22,10 +21,11 @@ align-items: center;
 }
 & hr {
     width: 80%;
-    position: relative;
-    left: 20%;
+    transform: translateX(50px);
+    // position: relative;
+    // left: 50%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
  hr {
     display: none;
  }   
@@ -48,6 +48,10 @@ align-items: center;
     background: #00000000;
     position: relative;
     right: 25px;
+    display: none;
+    @media screen and (max-width: 650px) {
+     display: block;   
+    }
     & .line_2 {
         width: 100%;
         position:absolute;
@@ -71,16 +75,11 @@ align-items: center;
         bottom: 0px;
     }
 }
-@media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-}
 @media screen and (max-width: 768px) {
  padding: 0px 0 40px 40px;   
 }
 @media screen and (max-width: 650px) {
  padding: 25px;   
-display: flex;
-justify-content: space-between;
 }
 
 }
