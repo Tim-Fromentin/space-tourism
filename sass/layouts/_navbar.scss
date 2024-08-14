@@ -1,0 +1,86 @@
+// sass/layouts/_navbar.scss
+@use "../base/theme" as theme;
+
+.nav {
+    position: absolute;
+    width: 100%;
+padding: theme.$p-64 0 theme.$p-64 theme.$p-64;
+display: grid;
+grid-template-columns: 50px 1fr 1fr;
+align-items: center;
+
+    &__box_link {
+    background: #ffffff05;
+    padding: 38.5px 64px;
+    display: flex;
+    // width: 50%;
+    justify-content: space-between;
+    position: relative;
+    @media screen and (max-width: 650px) {
+    display: none;
+    }
+}
+& hr {
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+@media screen and (max-width: 1024px) {
+ hr {
+    display: none;
+ }   
+
+}
+&__box_link a {
+    font-size: theme.$fs-16;
+    font-family: theme.$ff-title;
+    text-transform: uppercase;
+}
+&__box_link a:active {
+    color: #000;
+}
+&__box_link a span {
+    margin-right: 12px;
+}
+&__btn_hamb {
+    height: 30px;
+    width: 50px;
+    background: #00000000;
+    position: relative;
+    right: 25px;
+    & .line_2 {
+        width: 100%;
+        position:absolute;
+        height: 3px;
+        background: theme.$color-text;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    & .line_1 {
+        width: 100%;
+        position:absolute;
+        height: 3px;
+        background: theme.$color-text;
+        top: 1px;
+    }
+    & .line_3 {
+        width: 100%;
+        position: absolute;
+        height: 3px;
+        background: theme.$color-text;
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+ padding: 0px 0 40px 40px;   
+}
+@media screen and (max-width: 650px) {
+ padding: 25px;   
+display: flex;
+justify-content: space-between;
+}
+
+}

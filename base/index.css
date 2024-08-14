@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: #FFFFFF;
+  background: #0B0D17;
+}
+
+header, section {
+  padding: 128px 165px;
+}
+@media screen and (max-width: 425px) {
+  header, section {
+    padding: 128px 24px 128px 24px;
+  }
+}
+
+.title {
+  font-size: 6.25rem;
+  font-family: "Bellefair";
+}
+
+.surtitle {
+  font-family: "Bellefair";
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-family: "Bellefair";
+  font-size: 1.75rem;
+}
+
+.text {
+  font-family: "Barlow Condensed";
+  font-size: 1.125rem;
+}
+
+/*# sourceMappingURL=index.css.map */

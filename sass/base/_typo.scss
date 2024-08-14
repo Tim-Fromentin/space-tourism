@@ -1,0 +1,22 @@
+// sass/styles/home.scss
+
+@use "../base/theme" as theme;
+
+.title {
+    font-size: theme.$fs-100;
+    font-family: theme.$ff-title;
+    
+}
+.surtitle {
+    font-family: theme.$ff-title;
+    font-size: theme.$fs-56;
+    
+}
+.subtitle {
+    font-family: theme.$ff-title;
+    font-size: theme.$fs-28;
+}
+.text {
+    font-family: theme.$ff-text;
+    font-size: theme.$fs-18;
+}

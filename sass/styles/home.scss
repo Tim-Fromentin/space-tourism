@@ -1,0 +1,36 @@
+// sass/styles/home.scss
+@use "../base";
+@use "../layouts/navbar";
+@use "../layouts/footer";
+@use "../components/button";
+@use "../components/card";
+
+// Exemple d'application des styles
+.home {
+    min-height: 100vh;
+    width: 100vw;
+    background: url(../assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-items: center;
+
+    // Ciblage des éléments imbriqués
+    & .title, & .box_txt .subtitle {
+        text-transform: uppercase;
+    }
+
+    // Media query pour les écrans de 768px et moins
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__box_txt {
+            margin-bottom: 50px;
+        }
+    }
+}

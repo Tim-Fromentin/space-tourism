@@ -1,0 +1,30 @@
+@use "../base/theme" as theme;
+.link_primary {
+    background: theme.$color-text;
+    color: theme.$color-primary;
+    font-size: theme.$fs-32;
+    border-radius: 50%;
+    text-transform: uppercase;
+    width: 200px;
+    height: 200px;
+    padding: 64px;
+    text-align: center;
+    position: relative;
+    & span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        animation: pulseLinkAnim 2s infinite ease-in-out;
+    }
+}
+@keyframes pulseLinkAnim  {
+    0%, 100% {
+        box-shadow: 0 0 0 0px #ffffff00;
+    }
+    50% {
+        box-shadow: 0 0 0 50px #ffffff75;
+    }
+}
