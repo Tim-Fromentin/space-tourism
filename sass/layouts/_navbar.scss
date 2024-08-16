@@ -4,14 +4,14 @@
 .nav {
     position: absolute;
     width: 100%;
-padding: theme.$p-64 0 theme.$p-64 theme.$p-64;
+padding: theme.$p-64 0 0 theme.$p-64;
 display: flex;
 align-items: center;
 justify-content: space-between;
 
     &__box_link {
     background: #ffffff05;
-    padding: 38.5px 64px;
+    padding: 38.5px 64px 38.5px 128px ;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -20,8 +20,8 @@ justify-content: space-between;
     }
 }
 & hr {
-    width: 80%;
-    transform: translateX(50px);
+    width: 50%;
+    transform: translateX(100px);
     // position: relative;
     // left: 50%;
 }
@@ -35,9 +35,8 @@ justify-content: space-between;
     font-size: theme.$fs-16;
     font-family: theme.$ff-title;
     text-transform: uppercase;
-}
-&__box_link a:active {
-    color: #000;
+    margin-right: 48px;
+    position: relative;
 }
 &__box_link a span {
     margin-right: 12px;
@@ -82,4 +81,22 @@ justify-content: space-between;
  padding: 25px;   
 }
 
+}
+.nav_home a:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -38.5px;
+    left: 0;
+    background: theme.$color-text;
+}
+.nav_destination a:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -38.5px;
+    left: 0;
+    background: theme.$color-text;
 }

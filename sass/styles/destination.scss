@@ -1,0 +1,67 @@
+@use "../base";
+@use "../layouts/navbar";
+@use "../layouts/footer";
+@use "../components/button";
+@use "../components/card";
+
+.destination {
+    background: url(../../assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    &__nav {
+        font-size: base.$fs-16;
+        font-family: base.$ff-title;
+        text-transform: uppercase;
+        & a {
+            margin-right: 32px;
+            position: relative;
+        }
+        & .active_link::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: -13px;
+            left: 0;
+            background: base.$color-text;
+        }
+    }
+    &__box_pre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 150px;
+        & .title {
+            margin: 40px 0 16px 0;
+        }
+        & img {
+            // max-width: 480px;
+            width: 80%;
+        }
+
+
+        & .box_pre_txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        & .box_info {
+            display: flex;
+            justify-content: space-between;
+            & p {
+                display: flex;
+                flex-direction: column;
+            }
+            & span {
+                font-size: base.$fs-14;
+            }
+        }
+        & hr {
+            height: 1px;
+            width: 100%;
+            margin: 40px 0;
+            background: base.$color-text;
+        }
+        
+    }
+    
+}

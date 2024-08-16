@@ -26,7 +26,7 @@ body {
 }
 
 header, section {
-  padding: 128px 165px;
+  padding: 207px 165px 128px 165px;
 }
 @media screen and (max-width: 425px) {
   header, section {
@@ -37,6 +37,7 @@ header, section {
 .title {
   font-size: 6.25rem;
   font-family: "Bellefair";
+  text-transform: uppercase;
 }
 
 .surtitle {
@@ -47,6 +48,7 @@ header, section {
 .subtitle {
   font-family: "Bellefair";
   font-size: 1.75rem;
+  text-transform: uppercase;
 }
 
 .text {

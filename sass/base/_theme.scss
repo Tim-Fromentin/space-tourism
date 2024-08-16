@@ -37,7 +37,7 @@ body {
     background: $color-primary;
 }
 header, section {
-    padding: 128px 165px;
+    padding: calc(159px + 48px) 165px 128px 165px;
     @media screen and (max-width: 425px) {
      padding: 128px 24px 128px 24px;
     }

@@ -5,6 +5,7 @@
 .title {
     font-size: theme.$fs-100;
     font-family: theme.$ff-title;
+    text-transform: uppercase;
     
 }
 .surtitle {
@@ -15,6 +16,7 @@
 .subtitle {
     font-family: theme.$ff-title;
     font-size: theme.$fs-28;
+    text-transform: uppercase;
 }
 .text {
     font-family: theme.$ff-text;
