@@ -5,15 +5,17 @@
 @use "../components/card";
 
 .crew {
-    display: flex;
-    gap: 50px;
-    align-items: center;
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-
     &__container {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &__container_txt {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -32,4 +34,9 @@
             }}
         }
     }
+}
+
+
+.nav__link--active:nth-child(3):before {
+    width: 100%;
 }

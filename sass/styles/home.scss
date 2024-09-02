@@ -34,3 +34,6 @@
         }
     }
 }
+.nav__link--active:nth-child(1):before {
+    width: 100%;
+}
